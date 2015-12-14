@@ -95,9 +95,39 @@ nav#top-nav-bar ul{
 }
 
 nav#top-nav-bar ul li{
-	display: inline;
+	display: inline-block;
 	margin: 0 25px;
 	color: white;
+}
+
+nav#top-nav-bar ul li:hover{
+	cursor: pointer;
+}
+
+nav#top-nav-bar ul li hr{
+
+	opacity: 0;
+	visibility: hidden;
+
+	display: inline-block;
+
+	width: 100%;
+	margin: auto;
+
+	transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+nav#top-nav-bar ul li:hover hr{
+
+	opacity: 1;
+	visibility: visible;
+
+	transform: translateY(-10px);
+	-webkit-transform: translateY(-10px);
 }
 
 div.section#contact-info-section{
@@ -105,18 +135,53 @@ div.section#contact-info-section{
 }
 
 span.contact-info-button{
+	position: relative;
 	display: inline-block;
-	width: 64px;
+	overflow: none;
+	width: 150px;
 	margin: 5%;
+}
+
+span.contact-info-button:hover{
+	cursor: pointer;
 }
 
 span.contact-info-button img{
 	width: 100%;
 	height: 64px;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+span.contact-info-button:hover img{
+	transform: translateY(-5px);
+	-webkit-transform: translateY(-5px);
+}
+
+span.contact-info-button:hover .secondary-text{
+	opacity:1;
+	transform: translateY(-20px);
+	-webkit-transform: translateY(-20px);
+}
+
+span.contact-info-button:hover .primary-text{
+	visibility: hidden;
 }
 
 span.contact-info-button .primary-text{
 	text-align: center;
+}
+
+span.contact-info-button .secondary-text{
+	position: absolute;
+	opacity:0;
+	text-align: center;
+	transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 h1#who-we-are-title{
