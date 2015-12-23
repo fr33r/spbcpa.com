@@ -1,8 +1,8 @@
 var scrollManager = (function(){
 
 	var internalSettings = {
-		animationDuration: 750,
-		numOfPixelsPerMovement: 1,
+		animationDuration: 1000,
+		numOfPixelsPerMovement: 15,
 		minDelay: 10
 	};
 	

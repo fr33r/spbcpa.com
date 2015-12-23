@@ -4,7 +4,8 @@ function initializeMap(){
   			lat: 39.221512, 
   			lng: -84.441454
   		},
-  		zoom: 17,
+  		zoom: 16,
+      scrollwheel: false,
   		mapTypeControl: false,
   		zoomControl: false,
   		streetViewControl: false,
@@ -228,7 +229,8 @@ function initializeMap(){
 		position: { lat: 39.221512,  lng: -84.441454 },
 		map: googleMap,
 		title: "Seeskin Paas & Blackburn",
-		animation: google.maps.Animation.DROP
+		animation: google.maps.Animation.DROP,
+    icon: 'img/icon/redMarker2.png'
 	});
 
 	//create the info window that shows when clicking on the marker.
