@@ -41,13 +41,34 @@ window.onload = function(){
 
 	var topNav = window.document.getElementById("top-nav-bar");
 
-	navigationManager.configure({ navigationElement: topNav, changedStateClass: "scrolled"});
+	navigationManager.configure({ navigationElement: topNav, changedStateClass: "scrolled", navigationItemElementClass: "nav-item"});
 
 	window.onscroll = function(){
 		if(window.scrollY != 0){
 			navigationManager.changeState();
 		}else{
 			navigationManager.changeBack();
+		}
+
+		if(window.scrollY >= contactUsSection.offsetTop){
+			//window.alert("entered contact us section.");
+			navigationManager.deactivateNavItem(0);
+			navigationManager.deactivateNavItem(1);
+			navigationManager.activateNavItem(2);
+		}else if(window.scrollY >= servicesSection.offsetTop){
+			//window.alert("entered services section.");
+			navigationManager.deactivateNavItem(0);
+			navigationManager.deactivateNavItem(2);
+			navigationManager.activateNavItem(1);
+		}else if(window.scrollY >= whoWeAre.offsetTop){
+			//window.alert("entered who we are section.");
+			navigationManager.deactivateNavItem(1);
+			navigationManager.deactivateNavItem(2);
+			navigationManager.activateNavItem(0);
+		}else{
+			navigationManager.deactivateNavItem(0);
+			navigationManager.deactivateNavItem(2);
+			navigationManager.deactivateNavItem(1);
 		}
 	}
 

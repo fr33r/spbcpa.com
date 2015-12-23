@@ -4,7 +4,7 @@ function initializeMap(){
   			lat: 39.221512, 
   			lng: -84.441454
   		},
-  		zoom: 16,
+  		zoom: 15,
       scrollwheel: false,
   		mapTypeControl: false,
   		zoomControl: false,

@@ -133,25 +133,37 @@ nav#top-nav-bar ul li:hover hr{
 	-webkit-transform: translateY(0px);
 }
 
-div.section#contact-info-section{
-	text-align: center;
+nav#top-nav-bar ul li.active hr{
+
+	opacity: 1;
+	visibility: visible;
+
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
 }
 
 span.contact-info-button{
 	position: relative;
-	display: inline-block;
+	display: block;
 	overflow: none;
-	width: 150px;
-	margin: 5%;
+	width: calc(100%/3);
+	height: 50%;
+	background-color: #DDD;
+	float: left;
+	text-align: center;
+
+	-webkit-transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
 }
 
 span.contact-info-button:hover{
 	cursor: pointer;
+	background-color: #BBB;
 }
 
 span.contact-info-button img{
-	width: 100%;
-	height: 64px;
+	width: 100px;
+	height: 100px;
 
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
@@ -173,13 +185,15 @@ span.contact-info-button:hover .primary-text{
 }
 
 span.contact-info-button .primary-text{
-	text-align: center;
+
 }
 
 span.contact-info-button .secondary-text{
 	position: absolute;
-	opacity:0;
-	text-align: center;
+	opacity: 0;
+	left: 0;
+	width: 100%;
+
 	transform: translateY(10px);
 	-webkit-transform: translateY(10px);
 
@@ -197,7 +211,7 @@ div.section#who-we-are-section  h1{
 	font-family: ChunkFive;
 }
 
-div.section#who-we-are-section > p{
+div.section#who-we-are-section p{
 	text-align: justify;
 	width: 80%;
 	margin: auto;
@@ -225,6 +239,11 @@ div.section#services-section h1.service-title{
 	text-transform: uppercase;
 }
 
+div.section#services-section div.service-description p{
+	width: 60%;
+	margin: auto;
+}
+
 div.vert-horiz-centered{
 
 	position:relative;
@@ -232,11 +251,9 @@ div.vert-horiz-centered{
 
 	display: block;
 	margin: 0 auto;
-	width: 60%;
 
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-
 }
 
 img.service-icon{
