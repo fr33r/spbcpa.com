@@ -15,7 +15,6 @@
 		<meta name-"slurp" content="index; follow"/>
 
 		<!-- CSS -->
-		<link rel="stylesheet" href = "css/googleMaps.css" type="text/css"/>
 		<link rel="stylesheet" href = "css/main.css" type="text/css"/>
 
 		<!-- Google Maps API -->
@@ -28,9 +27,9 @@
 		<nav id="top-nav-bar">
 			<!--<img src="img/spb_logo.jpg"/>-->
 			<ul>
-				<li>About Us<hr /></li>
-				<li>Services<hr /></li>
-				<li>Contact Us<hr /></li>
+				<li id="aboutUs">About Us<hr /></li>
+				<li id="services">Services<hr /></li>
+				<li id="contactUs">Contact Us<hr /></li>
 			</ul>
 		</nav>
 
@@ -42,37 +41,63 @@
 			<span class="scroll-nav-button"></span>
 		</span>
 
-		<div id="first" class="section">
+		<div id="first-section" class="section">
 			<h1>Seeskin Paas & Blackburn</h1>
 		</div>
+
 		<div id="who-we-are-section" class="section">
-			<h1 id="who-we-are-title">who we are</h1>
+			<div class = "vert-horiz-centered">
+				<h1 id="who-we-are-title">who we are</h1>
 
-			<p id="who-we-are-content">
-				put some awesome mission statement or brief explanation of what the firm does, and what they can provide the customer. put some awesome mission statement or brief explanation of what the firm does, and what they can provide the customer.
-			</p>
-
-		</div>
-		<div class="section">
-			<div class="service-description">
-				<h1 class="service-title">service #1</h1>
-				<p>
-					put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here.
-				</p>
-			</div>
-			<div class="service-description">
-				<h1 class="service-title">service #2</h1>
-				<p>
-					put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here.
-				</p>
-			</div>
-			<div class="service-description">
-				<h1 class="service-title">service #3</h1>
-				<p>
-					put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here.
+				<p id="who-we-are-content">
+					put some awesome mission statement or brief explanation of what the firm does, and what they can provide the customer. put some awesome mission statement or brief explanation of what the firm does, and what they can provide the customer.
 				</p>
 			</div>
 		</div>
+
+		<div id="services-section" class="section">
+			<div class="service-description">
+
+				<div class = "vert-horiz-centered">
+					<img class="service-icon" src="img/icon/clothing2.svg" alt="consulting services"/>
+					<h1 class="service-title">Consulting</h1>
+					<p class="service-text">
+						put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. 
+					</p>
+				</div>
+			</div>
+			<div class="service-description">
+
+				<div class = "vert-horiz-centered">
+					<img class="service-icon" src="img/icon/text70.svg" alt="accounting services"/>
+					<h1 class="service-title">Accounting</h1>
+					<p class="service-text">
+						put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. 
+					</p>
+				</div>
+			</div>
+			<div class="service-description">
+
+				<div class = "vert-horiz-centered">
+					<img class="service-icon" src="img/icon/tool884.svg" alt="tax services"/>
+					<h1 class="service-title">Tax</h1>
+					<p class="service-text">
+						put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. 
+					</p>
+				</div>
+			</div>
+			<div class="service-description">
+
+				<div class = "vert-horiz-centered">
+					<img class="service-icon" src="img/icon/money131.svg" alt="payroll services"/>
+					<h1 class="service-title">Payroll</h1>
+					<p class="service-text">
+						put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. put something about the service here. 
+					</p>
+				</div>
+			</div>
+		</div>
+
 		<div id="contact-info-section" class="section">
 			<div id="map"></div>
 			<span id="contact-info">
@@ -94,7 +119,11 @@
 			</span>
 		</div>
 
+		<script src="js/exceptions.js"></script>
+		<script src="js/global.js"></script>
 		<script src="js/googleMaps.js"></script>
+		<script src="js/scrollManager.js"></script>
+		<script src="js/navigationManager.js"></script>
 		<script src="js/main.js"></script>
 
 	</body>

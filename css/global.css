@@ -1,0 +1,248 @@
+html, body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-size: 16px;
+	font-family: Roboto-Thin;
+}
+
+div.section{
+	height: 100%;
+	width: 100%;
+}
+
+div.section#first-section{
+	background-image: url(../img/cinci_2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: -1;
+}
+
+div.section#first-section:before{
+	content: '';
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+div.section#first-section h1{
+	text-align: center;
+	width: 100%;
+	font-family: ChunkFive;
+	font-size: 3em;
+	position: absolute;
+	color: white;
+	text-transform: uppercase;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+span#vertical-scroll-nav{
+	display: inline-block;
+	width: 50px;
+
+	position: fixed;
+	top: 50%;
+	right: 0%;
+
+	z-index: 100;
+
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+span.scroll-nav-button{
+	display: block;
+	border: 2px solid #FFF;
+	height: 12px;
+	width: 12px;
+	margin: 5px;
+
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+
+	-webkit-transition:background-color 0.3s ease;
+	transition:background-color 0.3s ease;
+}
+
+span.scroll-nav-button:hover{
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+
+nav#top-nav-bar{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	font-family: Roboto-Regular;
+	width: 100%;
+
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+}
+
+nav#top-nav-bar.scrolled{
+	color: #000;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav#top-nav-bar ul{
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+
+nav#top-nav-bar ul li{
+	display: inline-block;
+	margin: 0 25px;
+	color: white;
+	padding: 15px 0 15px 0;
+}
+
+nav#top-nav-bar ul li:hover{
+	cursor: pointer;
+}
+
+nav#top-nav-bar ul li hr{
+
+	opacity: 0;
+	visibility: hidden;
+
+	/*display: inline-block;*/
+
+	width: 80%;
+	margin: auto;
+
+	transform: translateY(5px);
+	-webkit-transform: translateY(5px);
+
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+nav#top-nav-bar ul li:hover hr{
+
+	opacity: 1;
+	visibility: visible;
+
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+}
+
+div.section#contact-info-section{
+	text-align: center;
+}
+
+span.contact-info-button{
+	position: relative;
+	display: inline-block;
+	overflow: none;
+	width: 150px;
+	margin: 5%;
+}
+
+span.contact-info-button:hover{
+	cursor: pointer;
+}
+
+span.contact-info-button img{
+	width: 100%;
+	height: 64px;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+span.contact-info-button:hover img{
+	transform: translateY(-5px);
+	-webkit-transform: translateY(-5px);
+}
+
+span.contact-info-button:hover .secondary-text{
+	opacity:1;
+	transform: translateY(-20px);
+	-webkit-transform: translateY(-20px);
+}
+
+span.contact-info-button:hover .primary-text{
+	visibility: hidden;
+}
+
+span.contact-info-button .primary-text{
+	text-align: center;
+}
+
+span.contact-info-button .secondary-text{
+	position: absolute;
+	opacity:0;
+	text-align: center;
+	transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+div.section#who-we-are-section{
+	height: 50%;
+}
+
+div.section#who-we-are-section  h1{
+	font-size: 2em;
+	text-align: center;
+	font-family: ChunkFive;
+}
+
+div.section#who-we-are-section > p{
+	text-align: justify;
+	width: 80%;
+	margin: auto;
+}
+
+div.section#services-section div.service-description{
+	width: 50%;
+	height: 50%;
+	float: left;
+	background-color: #DDD;
+	text-align: justify; 
+
+	-webkit-transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+
+div.section#services-section div.service-description:hover{
+	background-color: #BBB;
+}
+
+div.section#services-section h1.service-title{
+	font-size: 1.25em;
+	font-family: ChunkFive;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div.vert-horiz-centered{
+
+	position:relative;
+	top: 50%;
+
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+}
+
+img.service-icon{
+	width: 100px;
+	height: 100px;
+
+	display:block;
+	margin: 0 auto;
+}

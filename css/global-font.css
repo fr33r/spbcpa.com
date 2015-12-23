@@ -1,0 +1,17 @@
+/* Downloaded from http://www.fontsquirrel.com/fonts/ChunkFive */
+@font-face {
+    font-family: ChunkFive;
+    src: url('../font/Chunkfive.otf');
+}
+
+/* Downloaded from http://www.fontsquirrel.com/fonts/roboto */
+@font-face {
+    font-family: Roboto-Thin;
+    src: url('../font/Roboto/Roboto-Thin.ttf');
+}
+
+/* Downloaded from http://www.fontsquirrel.com/fonts/roboto */
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../font/Roboto/Roboto-Regular.ttf');
+}
